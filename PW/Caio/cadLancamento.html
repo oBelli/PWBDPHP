@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssLanc.css">
+    <title>Lançamento</title>
+</head>
+<body>
+    <center>
+        <form action="insert_lancamento.php" method="post">
+            <br><br><br><br><br><br><br>
+        <div class="login">
+            <br>
+            <h1>CADASTRO DO LANÇAMENTO</h1>
+            <br>
+            <div class="input-container">
+                <input placeholder="DESCRIÇÃO" class="input" name="descricao" type="text" style="margin-top: 0px;">
+            </div>
+            <br><br><br>
+            <div class="input-container">
+                <input placeholder="VALOR" class="input" name="valor" type="text">
+            </div>
+            <br><br>
+            <h5 style="margin-left: -585px; margin-top: -7px;">TIPO</h5>
+            <select name="tipo" id="tipo" style="margin-top: -10px;">
+                <option value=""></option>
+                <option value="despesa">DESPESA</option>
+                <option value="receita">RECEITA</option>
+            </select>
+            <br><br><br><br>
+            <div class="input-container">
+                <input placeholder="DATA LANÇAMENTO(AAAA/MM/DD)" class="input" name="dt_lanc" type="value">
+            </div>
+            
+            <br><br><br><br>
+            <button type="submit" class="button">CADASTRAR</button>
+        </div>
+    </form>
+    <a href="#" onclick="history.back()"><button style="padding: 15px 121px; background-color: #57bfe7; color: white; top: 630px;" class="button">VOLTAR</button></a>
+    </center>
+</body>
+</html>
